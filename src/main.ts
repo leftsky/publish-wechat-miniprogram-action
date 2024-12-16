@@ -3,7 +3,7 @@ import path from "path";
 import fs from "fs";
 import * as exec from "@actions/exec";
 
-const codesDir = getInput('uploadKey');
+const codesDir = getInput('codesDir');
 const uploadKey = getInput('uploadKey');
 const type = getInput('type') || 'miniProgram';
 const version = getInput('version');
