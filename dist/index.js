@@ -25700,7 +25700,7 @@ if (!fs_1.default.existsSync(dir)) {
 // 创建文件
 fs_1.default.writeFileSync(keyFile, uploadKey);
 // fs.chmodSync(keyFile, '600');
-exec.exec('npx', ['mp-ci', 'upload',
+const argvs = ['mp-ci', 'upload',
     codesDir,
     `--pkp=${keyFile}`,
     `--type=${type}`,
@@ -25708,7 +25708,9 @@ exec.exec('npx', ['mp-ci', 'upload',
     `--desc="${description}"`,
     `--robot=${robot}`,
     `--env=${env}`
-], {
+];
+console.log('argvs', argvs);
+exec.exec('npx', argvs, {
     listeners: {
         stdout: (data) => {
             console.log('stdout', data.toString());

@@ -25,7 +25,7 @@ if (!fs.existsSync(dir)) {
 fs.writeFileSync(keyFile, uploadKey);
 // fs.chmodSync(keyFile, '600');
 
-exec.exec('npx', ['mp-ci', 'upload',
+const argvs = ['mp-ci', 'upload',
     codesDir,
     `--pkp=${keyFile}`,
     `--type=${type}`,
@@ -33,7 +33,11 @@ exec.exec('npx', ['mp-ci', 'upload',
     `--desc="${description}"`,
     `--robot=${robot}`,
     `--env=${env}`
-], {
+];
+
+console.log('argvs', argvs);
+
+exec.exec('npx', argvs, {
     listeners: {
         stdout: (data: Buffer) => {
             console.log('stdout', data.toString());
