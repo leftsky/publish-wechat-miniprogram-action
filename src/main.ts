@@ -15,7 +15,8 @@ if (!codesDir || !uploadKey || !version) {
     throw new Error('请配置codesDir, uploadKey, version');
 }
 
-const keyFile = path.join(codesDir, './uploadkey.key');
+const keyFile = "./uploadkey.key";
+// 创建文件
 fs.writeFileSync(keyFile, uploadKey);
 // fs.chmodSync(keyFile, '600');
 
