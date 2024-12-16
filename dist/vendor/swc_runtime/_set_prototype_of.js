@@ -1,0 +1,1 @@
+"use strict";function _set_prototype_of(t,o){return exports._=exports._set_prototype_of=_set_prototype_of=Object.setPrototypeOf||function(t,o){return t.__proto__=o,t},_set_prototype_of(t,o)}exports._=exports._set_prototype_of=_set_prototype_of;

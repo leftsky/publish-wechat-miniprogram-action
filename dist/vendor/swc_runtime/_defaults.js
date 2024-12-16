@@ -1,0 +1,1 @@
+"use strict";function _defaults(e,t){for(var r=Object.getOwnPropertyNames(t),o=0;o<r.length;o++){var s=r[o],n=Object.getOwnPropertyDescriptor(t,s);n&&n.configurable&&void 0===e[s]&&Object.defineProperty(e,s,n)}return e}exports._=exports._defaults=_defaults;

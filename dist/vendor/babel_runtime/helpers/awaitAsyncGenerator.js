@@ -1,0 +1,1 @@
+var OverloadYield=require("./OverloadYield");function _awaitAsyncGenerator(e){return new OverloadYield(e,0)}module.exports=_awaitAsyncGenerator;

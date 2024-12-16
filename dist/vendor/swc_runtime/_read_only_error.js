@@ -1,0 +1,1 @@
+"use strict";function _read_only_error(r){throw TypeError('"'+r+'" is read-only')}exports._=exports._read_only_error=_read_only_error;

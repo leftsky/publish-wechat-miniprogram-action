@@ -1,0 +1,1 @@
+"use strict";var _check_private_redeclaration=require("./_check_private_redeclaration.js");function _class_private_method_init(e,_){_check_private_redeclaration._(e,_),_.add(e)}exports._=exports._class_private_method_init=_class_private_method_init;

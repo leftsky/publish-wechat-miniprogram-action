@@ -1,0 +1,1 @@
+var classApplyDescriptorDestructureSet=require("./classApplyDescriptorDestructureSet"),classExtractFieldDescriptor=require("./classExtractFieldDescriptor");function _classPrivateFieldDestructureSet(e,r){var t=classExtractFieldDescriptor(e,r,"set");return classApplyDescriptorDestructureSet(e,t)}module.exports=_classPrivateFieldDestructureSet;

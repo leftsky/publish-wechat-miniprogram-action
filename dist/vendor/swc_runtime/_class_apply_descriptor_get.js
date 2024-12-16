@@ -1,0 +1,1 @@
+"use strict";function _class_apply_descriptor_get(t,e){return e.get?e.get.call(t):e.value}exports._=exports._class_apply_descriptor_get=_class_apply_descriptor_get;

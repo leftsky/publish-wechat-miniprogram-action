@@ -16,7 +16,8 @@
   },
   "keywords": [],
   "dependencies": {
-    "@actions/core": "^1.11.1"
+    "@actions/core": "^1.11.1",
+    "miniprogram-ci": "^2.0.10"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",

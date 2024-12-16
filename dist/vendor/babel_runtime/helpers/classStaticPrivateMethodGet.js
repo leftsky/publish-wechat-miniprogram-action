@@ -1,0 +1,1 @@
+var classCheckPrivateStaticAccess=require("./classCheckPrivateStaticAccess");function _classStaticPrivateMethodGet(t,c,e){return classCheckPrivateStaticAccess(t,c),e}module.exports=_classStaticPrivateMethodGet;

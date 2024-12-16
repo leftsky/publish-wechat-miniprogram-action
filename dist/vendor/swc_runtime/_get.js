@@ -1,0 +1,1 @@
+"use strict";var _super_prop_base=require("./_super_prop_base.js");function _get(e,t,r){return"undefined"!=typeof Reflect&&Reflect.get?exports._=exports._get=_get=Reflect.get:exports._=exports._get=_get=function(e,t,r){var _=_super_prop_base._(e,t);if(_){var p=Object.getOwnPropertyDescriptor(_,t);return p.get?p.get.call(r||e):p.value}},_get(e,t,r||e)}exports._=exports._get=_get;

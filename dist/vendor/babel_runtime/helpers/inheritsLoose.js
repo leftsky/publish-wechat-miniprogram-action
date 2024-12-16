@@ -1,0 +1,1 @@
+var setPrototypeOf=require("./setPrototypeOf");function _inheritsLoose(t,o){t.prototype=Object.create(o.prototype),t.prototype.constructor=t,setPrototypeOf(t,o)}module.exports=_inheritsLoose;

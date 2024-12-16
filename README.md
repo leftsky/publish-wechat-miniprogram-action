@@ -6,6 +6,7 @@
 
 | 参数          | 是否必须 | 描述                                                                | 默认值         |
 |-------------|------|-------------------------------------------------------------------|-------------|
+| appid       | 必须   | 小程序的appid                                                         | -           |
 | codesDir    | 必须   | 上传的代码目录                                                           | -           |
 | uploadKey   | 必须   | 私钥文件内容                                                            | -           |
 | version     | 必须   | 发布版本号                                                             | -           |
@@ -20,29 +21,29 @@
 name: 'ali-oss Deploy'
 
 on:
-  push:
-    branches:
-      - master
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    push:
+        branches:
+            - master
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
 
 permissions:
-  contents: write
-  packages: write
+    contents: write
+    packages: write
 
 jobs:
-  deploy:
-    name: 'Deploy'
-    runs-on: ubuntu-latest
+    deploy:
+        name: 'Deploy'
+        runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: leftsky/publish-wechat-miniprogram-action@v1
-        with:
-          codesDir: your local static path
-          uploadKey: ${{ secrets.WECHAT_UPLOAD_KEY }}
-          version: v1.0.0
-          description: "test"
-          robot: 1
+        steps:
+            -   uses: actions/checkout@v2
+            -   uses: leftsky/publish-wechat-miniprogram-action@v1
+                with:
+                    codesDir: your local static path
+                    uploadKey: ${{ secrets.WECHAT_UPLOAD_KEY }}
+                    version: v1.0.0
+                    description: "test"
+                    robot: 1
 ```
 

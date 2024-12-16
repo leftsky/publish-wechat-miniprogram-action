@@ -1,0 +1,1 @@
+"use strict";function _initializer_define_property(e,i,r,t){r&&Object.defineProperty(e,i,{enumerable:r.enumerable,configurable:r.configurable,writable:r.writable,value:r.initializer?r.initializer.call(t):void 0})}exports._=exports._initializer_define_property=_initializer_define_property;

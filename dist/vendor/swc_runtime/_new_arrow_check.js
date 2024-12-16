@@ -1,0 +1,1 @@
+"use strict";function _new_arrow_check(r,n){if(r!==n)throw TypeError("Cannot instantiate an arrow function")}exports._=exports._new_arrow_check=_new_arrow_check;

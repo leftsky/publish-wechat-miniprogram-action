@@ -1,0 +1,1 @@
+"use strict";function _get_prototype_of(t){return exports._=exports._get_prototype_of=_get_prototype_of=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)},_get_prototype_of(t)}exports._=exports._get_prototype_of=_get_prototype_of;

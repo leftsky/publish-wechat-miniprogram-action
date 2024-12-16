@@ -1,0 +1,1 @@
+var checkPrivateRedeclaration=require("./checkPrivateRedeclaration");function _classPrivateFieldInitSpec(e,a,c){checkPrivateRedeclaration(e,a),a.set(e,c)}module.exports=_classPrivateFieldInitSpec;
