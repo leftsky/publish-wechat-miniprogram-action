@@ -1,6 +1,9 @@
 name: 'publish-wechat-miniprogram-action'
 author: 'leftsky<leftsky@vip.qq.com>'
 description: '上传小程序代码(小程序/小游戏/游戏插件/小程序插件)'
+branding:
+  icon: 'upload-cloud'
+  color: 'green'
 inputs:
   codesDir:
     required: true
