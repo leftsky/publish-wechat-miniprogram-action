@@ -25681,15 +25681,15 @@ const core_1 = __nccwpck_require__(7484);
 const path_1 = __importDefault(__nccwpck_require__(6928));
 const fs_1 = __importDefault(__nccwpck_require__(9896));
 const exec = __importStar(__nccwpck_require__(5236));
-const codesDir = (0, core_1.getInput)('codesDir');
+const projectPath = (0, core_1.getInput)('projectPath');
 const uploadKey = (0, core_1.getInput)('uploadKey');
 const type = (0, core_1.getInput)('type') || 'miniProgram';
 const version = (0, core_1.getInput)('version');
 const description = (0, core_1.getInput)('description') || '';
 const robot = (0, core_1.getInput)('robot') || 1;
 const env = (0, core_1.getInput)('env') || 'prod';
-if (!codesDir || !uploadKey || !version) {
-    throw new Error('请配置codesDir, uploadKey, version');
+if (!projectPath || !uploadKey || !version) {
+    throw new Error('请配置projectPath, uploadKey, version');
 }
 const keyFile = path_1.default.resolve("./uploadkey.key");
 // 检查目录是否存在，若不存在则创建
@@ -25701,7 +25701,7 @@ if (!fs_1.default.existsSync(dir)) {
 fs_1.default.writeFileSync(keyFile, uploadKey);
 // fs.chmodSync(keyFile, '600');
 const argvs = ['mp-ci', 'upload',
-    codesDir,
+    projectPath,
     `--pkp=${keyFile}`,
     `--type=${type}`,
     `--ver="${version}"`,
