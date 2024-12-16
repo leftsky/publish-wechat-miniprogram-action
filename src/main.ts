@@ -15,7 +15,14 @@ if (!codesDir || !uploadKey || !version) {
     throw new Error('请配置codesDir, uploadKey, version');
 }
 
-const keyFile = "./uploadkey.key";
+const keyFile = path.resolve("./uploadkey.key");
+console.log('keyFile', keyFile);
+// 检查目录是否存在，若不存在则创建
+const dir = path.dirname(keyFile);
+if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, {recursive: true}); // 创建目录
+}
+console.log(keyFile, uploadKey);
 // 创建文件
 fs.writeFileSync(keyFile, uploadKey);
 // fs.chmodSync(keyFile, '600');
