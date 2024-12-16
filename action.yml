@@ -1,0 +1,33 @@
+name: 'publish-wechat-miniprogram-action'
+author: 'leftsky<leftsky@vip.qq.com>'
+description: '上传小程序代码(小程序/小游戏/游戏插件/小程序插件)'
+inputs:
+  codesDir:
+    required: true
+    default: ./
+    description: '上传的代码目录'
+  uploadKey:
+    required: true
+    description: '私钥文件内容'
+  version:
+    required: true
+    default: v1.0.0
+    description: '发布版本号'
+  description:
+    required: false
+    description: '发布简介'
+  robot:
+    required: false
+    default: 1
+    description: '指定使用哪一个 ci 机器人，可选值：1 ~ 30'
+  type:
+    required: false
+    default: miniProgram
+    description: '项目类型: miniProgram | miniGame | miniProgramPlugin | miniGamePlugin'
+  env:
+    required: false
+    default: prod
+    description: '环境: dev | test | prod'
+runs:
+  using: node20
+  main: dist/index.js
