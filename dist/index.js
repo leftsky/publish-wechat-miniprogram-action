@@ -25691,14 +25691,12 @@ const env = (0, core_1.getInput)('env') || 'prod';
 if (!codesDir || !uploadKey || !version) {
     throw new Error('请配置codesDir, uploadKey, version');
 }
-const keyFile = path_1.default.resolve("/uploadkey.key");
-console.log('keyFile', keyFile);
+const keyFile = path_1.default.resolve("./uploadkey.key");
 // 检查目录是否存在，若不存在则创建
 const dir = path_1.default.dirname(keyFile);
 if (!fs_1.default.existsSync(dir)) {
     fs_1.default.mkdirSync(dir, { recursive: true }); // 创建目录
 }
-console.log(keyFile, uploadKey);
 // 创建文件
 fs_1.default.writeFileSync(keyFile, uploadKey);
 // fs.chmodSync(keyFile, '600');
