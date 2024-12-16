@@ -1,1 +1,0 @@
-"use strict";function _is_native_function(n){return -1!==Function.toString.call(n).indexOf("[native code]")}exports._=exports._is_native_function=_is_native_function;

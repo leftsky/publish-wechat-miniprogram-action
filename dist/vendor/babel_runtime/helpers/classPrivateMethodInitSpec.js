@@ -1,1 +1,0 @@
-var checkPrivateRedeclaration=require("./checkPrivateRedeclaration");function _classPrivateMethodInitSpec(e,a){checkPrivateRedeclaration(e,a),a.add(e)}module.exports=_classPrivateMethodInitSpec;

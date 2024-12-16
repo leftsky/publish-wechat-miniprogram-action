@@ -1,1 +1,0 @@
-"use strict";var _set_prototype_of=require("./_set_prototype_of.js");function _inherits(t,e){if("function"!=typeof e&&null!==e)throw TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&_set_prototype_of._(t,e)}exports._=exports._inherits=_inherits;

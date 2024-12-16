@@ -1,1 +1,0 @@
-"use strict";function _class_check_private_static_field_descriptor(t,e){if(void 0===t)throw TypeError("attempted to "+e+" private static field before its declaration")}exports._=exports._class_check_private_static_field_descriptor=_class_check_private_static_field_descriptor;

@@ -1,1 +1,0 @@
-function _identity(t){return t}module.exports=_identity;
