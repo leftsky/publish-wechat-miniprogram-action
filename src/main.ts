@@ -3,7 +3,7 @@ import path from "path";
 import fs from "fs";
 import * as exec from "@actions/exec";
 
-const codesDir = getInput('codesDir');
+const projectPath = getInput('projectPath');
 const uploadKey = getInput('uploadKey');
 const type = getInput('type') || 'miniProgram';
 const version = getInput('version');
@@ -11,8 +11,8 @@ const description = getInput('description') || '';
 const robot = getInput('robot') || 1;
 const env = getInput('env') || 'prod';
 
-if (!codesDir || !uploadKey || !version) {
-    throw new Error('请配置codesDir, uploadKey, version');
+if (!projectPath || !uploadKey || !version) {
+    throw new Error('请配置projectPath, uploadKey, version');
 }
 
 const keyFile = path.resolve("./uploadkey.key");
@@ -26,7 +26,7 @@ fs.writeFileSync(keyFile, uploadKey);
 // fs.chmodSync(keyFile, '600');
 
 const argvs = ['mp-ci', 'upload',
-    codesDir,
+    projectPath,
     `--pkp=${keyFile}`,
     `--type=${type}`,
     `--ver="${version}"`,
